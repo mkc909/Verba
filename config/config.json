@@ -1,0 +1,31 @@
+{
+  "server": {
+    "port": 8080,
+    "host": "localhost"
+  },
+  "openai": {
+    "api_key": "OPENAI_API_KEY_HERE",
+    "model": "gpt-4-turbo-preview"
+  },
+  "storage": {
+    "documents_path": "./data/documents",
+    "temp_path": "./data/temp"
+  },
+  "weaviate": {
+    "scheme": "http",
+    "host": "localhost:8096",
+    "batch": {
+      "size": 100,
+      "dynamic": true
+    },
+    "text2vec-openai": {
+      "model": "text-embedding-3-small",
+      "modelVersion": "001",
+      "type": "text"
+    }
+  },
+  "logging": {
+    "level": "info",
+    "format": "json"
+  }
+}
